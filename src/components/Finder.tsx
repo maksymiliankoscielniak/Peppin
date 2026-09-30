@@ -32,6 +32,7 @@ const THEMES: Theme[] = [
     caveat:
       'For weight loss, lifestyle changes and clinician-prescribed, properly trialled treatments have far stronger evidence than anything in this list.',
     why: {
+      retatrutide: 'A triple GIP/GLP-1/glucagon agonist in clinical trials – by far the most substantial weight-loss evidence here, but still unapproved and with significant GI side effects.',
       aod9604: 'Designed to copy growth hormone’s fat-metabolism effect without its other actions – but phase 2b obesity trials did not show meaningful weight loss.',
       frag176: 'The unmodified version of the same idea; supported only by cell and animal work.',
     },

@@ -129,6 +129,25 @@ export const COMPOUNDS: Compound[] = [
     keywords: ['fat', 'weight', 'metabolism', 'lipolysis', 'obesity', 'cutting'],
   },
   {
+    id: 'retatrutide',
+    name: 'Retatrutide',
+    aka: '“Reta” · LY3437943 (triple agonist)',
+    category: 'metabolic',
+    mechanism:
+      'An investigational once-weekly peptide from Eli Lilly that activates three receptors at once – GIP, GLP-1 and glucagon – to reduce appetite and raise energy expenditure.',
+    evidence:
+      'The strongest human data in this library: a phase 2 trial showed roughly 24% average weight loss at 48 weeks on the highest dose; phase 3 trials are running, so check current status.',
+    regulatory:
+      'Not approved anywhere – it is only available inside clinical trials. “Reta” sold online is unapproved and of unverifiable quality.',
+    tradeoffs: [
+      'Nausea, vomiting, diarrhoea and constipation are common in trials',
+      'Raised heart rate and skin-sensation changes were reported',
+      'Dose-dependent dropouts from side effects; long-term safety still being studied',
+      'Grey-market vials may be mislabelled, contaminated or under/over-dosed',
+    ],
+    keywords: ['weight', 'fat', 'obesity', 'metabolism', 'diabetes', 'appetite', 'glp-1', 'cutting'],
+  },
+  {
     id: 'frag176',
     name: 'Frag 176-191',
     aka: 'hGH fragment 176-191',
