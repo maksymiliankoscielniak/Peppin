@@ -260,3 +260,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .logo--animate path { stroke-dashoffset: 0; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Goal finder ---------- */
+.finder { display: grid; grid-template-columns: 0.9fr 1.3fr; gap: 28px; }
+.finder__input { display: grid; gap: 12px; align-content: start; }
+.finder__note { display: flex; gap: 6px; align-items: flex-start; }
+.finder__note svg { flex: none; margin-top: 3px; }
+.finder__results { display: grid; gap: 14px; align-content: start; }
+.finder__card { box-shadow: none; }
+.finder__card h4 { font-size: 18px; margin: 6px 0 0; }
+.finder__calc { justify-self: start; }
+@media (max-width: 900px) { .finder { grid-template-columns: 1fr; } }

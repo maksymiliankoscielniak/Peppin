@@ -102,7 +102,7 @@ export function summaryText(input: CalcInput, r: CalcResult, label?: string): st
     `Target dose: ${fmt(input.dose, 3)} ${input.doseUnit} (${fmt(r.doseMcg, 1)} mcg)`,
     `Draw volume: ${fmt(r.volumeMl, 3)} ml` + (r.units !== null ? ` = ${fmt(r.units, 1)} units` : ''),
     `Doses per vial: ${r.dosesPerVial}`,
-    'Educational / satirical simulation only – not medical advice.',
+    'Educational / informational simulation only – not medical advice.',
   ];
   return lines.join('\n');
 }

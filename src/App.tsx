@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowDown, Atom, Calculator as CalcIcon, LineChart, ShieldAlert } from 'lucide-react';
+import { ArrowDown, Atom, Compass, Calculator as CalcIcon, LineChart, ShieldAlert } from 'lucide-react';
 import Background from './components/Background';
 import Logo from './components/Logo';
 import Calculator from './components/Calculator';
 import Library from './components/Library';
 import HalfLife from './components/HalfLife';
+import Finder from './components/Finder';
 
 const DISCLAIMER =
-  'THIS PROJECT IS FOR EDUCATIONAL, INFORMATIONAL AND SATIRICAL PURPOSES ONLY. The material is not medical advice and is not an encouragement to use any substance. All calculations and data are purely illustrative and intended for simulation.';
+  'THIS PROJECT IS FOR EDUCATIONAL AND INFORMATIONAL PURPOSES ONLY. The material is not medical advice and is not an encouragement to use any substance. All calculations and data are purely illustrative and intended for simulation.';
 
 function Reveal({ children, className = '' }: { children: React.ReactNode; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -87,6 +88,7 @@ export default function App() {
         </a>
         <nav>
           <a href="#calculator">Calculator</a>
+          <a href="#finder">Finder</a>
           <a href="#library">Library</a>
           <a href="#halflife">Half-life</a>
           <a href="#about">About</a>
@@ -123,16 +125,23 @@ export default function App() {
           </Reveal>
         </section>
 
+        <section id="finder" className="section">
+          <Reveal>
+            <SectionHead n="B" icon={<Compass size={18} />} title="Goal finder" text="Tell us what you are curious about – in words or with a preset – and see which compounds in the library relate to it, with evidence level and trade-offs." />
+            <Finder onOpenCalculator={() => document.getElementById('calculator')?.scrollIntoView({ behavior: 'smooth' })} />
+          </Reveal>
+        </section>
+
         <section id="library" className="section">
           <Reveal>
-            <SectionHead n="B" icon={<Atom size={18} />} title="Compound library" text="An educational overview of commonly discussed research compounds: mechanism, what the evidence actually says, regulatory status and trade-offs. No dosing or cycle advice." />
+            <SectionHead n="C" icon={<Atom size={18} />} title="Compound library" text="An educational overview of commonly discussed research compounds: mechanism, what the evidence actually says, regulatory status and trade-offs. No dosing or cycle advice." />
             <Library />
           </Reveal>
         </section>
 
         <section id="halflife" className="section">
           <Reveal>
-            <SectionHead n="C" icon={<LineChart size={18} />} title="Half-life simulator" text="See how a substance with a given half-life accumulates or fades when administered at regular intervals. Bring your own numbers – it is a pharmacokinetics classroom toy." />
+            <SectionHead n="D" icon={<LineChart size={18} />} title="Half-life simulator" text="See how a substance with a given half-life accumulates or fades when administered at regular intervals. Bring your own numbers – it is a pharmacokinetics classroom toy." />
             <HalfLife />
           </Reveal>
         </section>
