@@ -96,7 +96,6 @@ export default function App() {
       <main id="top">
         <section className="hero">
           <div className="hero__copy">
-            <span className="eyebrow"><span className="pulse" /> Reconstitution math lab · v1.0</span>
             <Logo className="hero__logo" />
             <p className="hero__lead">
               A clean, private, client-side workbench for peptide-vial arithmetic. Enter your own numbers, see the syringe, copy the

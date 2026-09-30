@@ -30,7 +30,6 @@ export default function Logo({ className, animate = true, markOnly = false }: Lo
         <path pathLength={1} style={s(4)} d="M298 235 C262 236 246 258 249 282 C254 302 285 302 308 296" />
         <path pathLength={1} style={s(5)} d="M352 231 C336 270 318 320 316 392" />
         <path pathLength={1} style={s(6)} d="M347 231 C380 222 402 240 393 266 C384 286 356 288 334 284" />
-        <circle className="logo__touch" cx="316" cy="370" r="5" />
       </g>
       {!markOnly && (
         <g className="logo__letters">
