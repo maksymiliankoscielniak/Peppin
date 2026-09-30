@@ -1,4 +1,4 @@
-export type CategoryId = 'tissue' | 'gh' | 'cognitive' | 'metabolic' | 'pigment';
+export type CategoryId = 'tissue' | 'gh' | 'cognitive' | 'metabolic' | 'pigment' | 'skin';
 
 export interface Category {
   id: CategoryId;
@@ -12,6 +12,7 @@ export const CATEGORIES: Category[] = [
   { id: 'cognitive', label: 'Cognition & nerves', blurb: 'Neuropeptide research' },
   { id: 'metabolic', label: 'Metabolism', blurb: 'Fat-metabolism research' },
   { id: 'pigment', label: 'Pigmentation', blurb: 'Melanocortin research' },
+  { id: 'skin', label: 'Skin & appearance', blurb: 'Skin-remodelling research' },
 ];
 
 export interface Compound {
@@ -138,6 +139,18 @@ export const COMPOUNDS: Compound[] = [
     regulatory: 'Not approved for human use.',
     tradeoffs: ['Very little evidence of benefit', 'Product quality unverified'],
     keywords: ['fat', 'weight', 'metabolism', 'lipolysis', 'cutting'],
+  },
+  {
+    id: 'ghkcu',
+    name: 'GHK-Cu',
+    aka: 'Copper tripeptide-1',
+    category: 'skin',
+    mechanism:
+      'A naturally occurring copper-binding tripeptide found in plasma. In lab and small topical studies it has been linked to collagen and glycosaminoglycan synthesis and to skin-remodelling gene activity.',
+    evidence: 'Small human studies, mostly topical and cosmetic; injectable use is essentially unstudied.',
+    regulatory: 'Used as a cosmetic ingredient (topical). Injectable products are unapproved.',
+    tradeoffs: ['Topical and injectable use are very different things', 'Skin irritation is possible', 'Benefits in studies are modest'],
+    keywords: ['skin', 'wrinkles', 'collagen', 'aging', 'complexion', 'hair', 'wound'],
   },
   {
     id: 'mt2',

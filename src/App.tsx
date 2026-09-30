@@ -127,7 +127,7 @@ export default function App() {
 
         <section id="finder" className="section">
           <Reveal>
-            <SectionHead n="B" icon={<Compass size={18} />} title="Goal finder" text="Tell us what you are curious about – in words or with a preset – and see which compounds in the library relate to it, with evidence level and trade-offs." />
+            <SectionHead n="B" icon={<Compass size={18} />} title="Goal finder" text="Describe how you feel and what you want to work on – in your own words, several goals at once. See which compounds the research links to each goal, and why, with honest notes on evidence." />
             <Finder onOpenCalculator={() => document.getElementById('calculator')?.scrollIntoView({ behavior: 'smooth' })} />
           </Reveal>
         </section>
