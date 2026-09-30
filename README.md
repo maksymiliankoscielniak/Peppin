@@ -1,7 +1,7 @@
 # Peppin
 
 Client-side reconstitution calculator and educational compound library (Vite + React + TypeScript).
-Educational / satirical project – not medical advice.
+Educational project – not medical advice.
 
 ## Develop
 ```
